@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+.cup {
+  position: absolute;
+  height: 380px;
+  width: 250px;
+  border: 8px solid rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid transparent;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: url(wattterr_iimaggge.png);
+  background-repeat: repeat-x;
+  animation: animate 10s linear infinite;
+  box-shadow: 0 0 0 8px #000000, 0 0 0 35px rgb(255, 255, 255);
+}
+
+.cup:before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 120px;
+  border: 8px solid #000000;
+  right: -144px;
+  top: 70px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 50px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 100px;
+  }
+  10% {
+    background-position: 0 100px;
+  }
+  40% {
+    background-position: 1500 -100px;
+  }
+  80% {
+    background-position: 3000 -110px;
+  }
+  100% {
+    background-position: 3000 200px;
+  }
+}
